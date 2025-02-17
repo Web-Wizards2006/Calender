@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Calendar</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="calendar">
+        <header>
+            <button id="prev-month">&#8592;</button>
+            <span id="month-year"></span>
+            <button id="next-month">&#8594;</button>
+        </header>
+        <div>
+            <input type="date" id="jump-to-date" />
+        </div>
+        <div class="calendar-grid">
+            <div class="day-name">Sun</div>
+            <div class="day-name">Mon</div>
+            <div class="day-name">Tue</div>
+            <div class="day-name">Wed</div>
+            <div class="day-name">Thu</div>
+            <div class="day-name">Fri</div>
+            <div class="day-name">Sat</div>
+            <!-- Date grid will be dynamically generated here -->
+        </div>
+    </div>
+    <div id="event-modal" class="modal">
+        <textarea id="event-note" placeholder="Add an event..."></textarea>
+        <button id="save-event">Save</button>
+        <button id="close-modal">Close</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

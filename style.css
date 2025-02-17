@@ -1,0 +1,138 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #690B22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.calendar {
+    background-color: #F1E3D3;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    width: 90%;
+    max-width: 700px;
+    padding: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+header {
+    background-color: #E07A5F;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#month-year {
+    font-size: 2rem;
+    font-weight: 600;
+    color: #F1E3D3;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #F1E3D3;
+}
+
+#jump-to-date {
+    width: 95%;
+    margin: 10px 0 10px 0;
+    padding: 10px;
+    font-size: 1rem;
+    border:#E07A5F;
+    background-color: #E07A5F;
+    color: #F1E3D3;
+}
+
+.calendar-grid {
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    gap: 10px;
+    padding: 10px;
+}
+
+.day-name {
+    text-align: center;
+    font-weight: bold;
+    color: #F1E3D3;
+}
+
+.date {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background-color: #F1E3D3;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.date:hover {
+    background-color: #f0f0f0;
+}
+
+.today {
+    background-color: #690B22;
+    color: white;
+}
+
+.event-added {
+    background-color: #1B4D3E;
+    color: #F1E3D3;
+}
+
+.event-highlight {
+    display: block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: #1B4D3E;
+    margin-top: 5px;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    border-radius: 10px;
+    width: 150px;
+    color: #E07A5F;
+    z-index: 10;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 1rem;
+    border: none;
+    resize: none;
+    margin-bottom: 10px;
+}
+
+button {
+    background-color: #E07A5F;
+    color: #F1E3D3;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+button:hover {
+    background-color: #690B22;
+}
